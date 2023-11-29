@@ -1,0 +1,13 @@
+p {background-color: antiquewhite; color: black}
+
+h2 {background-color: burlywood; color: brown}
+
+header {text-decoration-line: underline;}
+
+ol li {color: aquamarine; max-height: 50px; width: 70%; }
+
+ol {overflow: scroll;}
+
+ul li {color: blueviolet; max-height: 50px; width: 70%; }
+
+ul {overflow: scroll;}

@@ -1,0 +1,9 @@
+section { display: flex;}
+
+div {margin: 10px;}
+
+.crumb {
+    display: inline-block;
+}
+
+ol li{padding-left: 10px; padding-right: 10px;}
