@@ -1,6 +1,9 @@
-section { display: flex;}
+section {
+    border: 1px solid gray;
+    display: flex;
+}
 
-div {margin: 10px;}
+img {width: 50%;}
 
 .crumb {
     display: inline-block;

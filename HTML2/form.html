@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Registracni Formular</title>
+
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
     <header>
@@ -11,24 +13,28 @@
 
     <form action="" method="get">
 
-        <fieldset id="personal_info">
+        <fieldset id="personalities">
 
-            <h4>Základní info</h4>
+            <section>
 
-            <label for="firstname">Jmeno: </label>
-            <input type="text" id="firstname" placeholder="Adam"/>
-            </br>
-            <label for="surname">Prijmeni: </label>
-            <input type="text" id="surname" placeholder="Smith"/>
-            </br>
-            <label for="email">Email: </label>
-            <input type="email" id="email" placeholder="adam.smith@gmail.com"/>
-            </br>
-            <label for="pass"; placeholder >Heslo: </label>
-            <input type="password" id="pass"/>
-            <br>
-            <label for="b_picture">Obrázek: </label>
-            <input type="button" id="b_picture" value="Choose file"/>
+                <h4>Základní info</h4>
+
+                <label for="firstname">Jmeno: </label>
+                <input type="text" id="firstname" placeholder="Adam"/>
+                </br>
+                <label for="surname">Prijmeni: </label>
+                <input type="text" id="surname" placeholder="Smith"/>
+                </br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="adam.smith@gmail.com"/>
+                </br>
+                <label for="pass"; >Heslo: </label>
+                <input type="password" id="pass" placeholder="**********"/>
+                <br>
+                <label for="b_picture">Obrázek: </label>
+                <input type="button" id="b_picture" value="Choose file"/>
+
+            </section>
 
         </fieldset>
 
@@ -36,27 +42,84 @@
 
             <legend> <h4>Název fieldsetu</h4></legend>
 
-            <h4>Základní parametry</h4>
+                <section>
 
-            <label for="male">Pohlaví: </label>
+                    <h4>Základní parametry</h4>
 
-            <label for="male">Muž</label>
-            <input type="radio" id="male" value="male" name="gender"/>
+                    <label for="male">Pohlaví: </label>
 
-            <label for="female">Žena</label>
-            <input type="radio" id="female" value="female" name="gender"/>
+                    <label for="male">Muž</label>
+                    <input type="radio" id="male" value="male" name="gender"/>
 
-            <label for="other">Jiné</label>
-            <input type="radio" id="other" value="other" name= "gender"/>
+                    <label for="female">Žena</label>
+                    <input type="radio" id="female" value="female" name="gender"/>
 
-            <br><br>
+                    <label for="other">Jiné</label>
+                    <input type="radio" id="other" value="other" name= "gender"/>
 
-            <label for="">Věk: </label>
-            <input type="text" id="">   <br><br>
+                </section>
+                <section>
 
-            <label for="datum">Datum narození: </label>
-            <input type="date" id="datum">
+                    <label for="">Věk: </label>
+                    <input type="text" id="">   <br><br>
 
+                    <label for="datum">Datum narození: </label>
+                    <input type="date" id="datum">
+
+                </section>
+
+        </fieldset>
+
+        <fieldset>
+
+            <section>
+
+                <legend><h4>Nepovinné ůdaje</h4></legend>
+
+                <p><label for="w3review">O sobě:</label></p>
+                <textarea id="w3review" name="w3review" rows="4" cols="50">At w3schools.c</textarea> <br><br>
+
+            </section>
+            <section>
+
+                Koníčky: </br>
+
+                <label for="traveling">Cestování</label>
+                <input type="checkbox" id="traveling" name="traveling">
+
+                <label for="music">Hudba</label>
+                <input type="checkbox" id="music" name="music">
+
+                <label for="programing">Programování</label>
+                <input type="checkbox" id="programing" name="programing">
+
+            </section>
+
+            <section>
+
+                <label for="name-select">Jazyk: </label>
+
+                <select id="name-select">
+                    
+                    <optgroup label="EU">
+
+                        <option>Italy</option>
+                        <option>Czech</option>
+                        <option>Austria</option>
+
+                    </optgroup>
+
+                    <optgroup label="Asia">
+
+                        <option>China</option>
+                        <option>Vietnameese</option>
+                        <option>S.Corea</option>
+
+                    </optgroup>
+                    
+                </select>
+
+            </section>
 
         </fieldset>
 
